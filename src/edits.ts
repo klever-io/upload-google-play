@@ -49,6 +49,7 @@ export async function runUpload(
     validatedReleaseFiles: string[],
     versionCodesToRetain: number[] | undefined
 ) {
+    console.log("Chegou nessa porra")
     const auth = new google.auth.GoogleAuth({
         scopes: ['https://www.googleapis.com/auth/androidpublisher']
     });
