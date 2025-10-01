@@ -91,7 +91,8 @@ export async function run() {
                 milliseconds: 3.6e+6
             }
         )
-    } catch (error: unknown) {
+    } catch (error) {
+        console.log(`falou essa porra com essa merda: ${error}`)
         if (error instanceof Error) {
             core.setFailed(error.message)
         } else {
